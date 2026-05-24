@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: dns-nawala-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: BOT_TOKEN
+        sync: false

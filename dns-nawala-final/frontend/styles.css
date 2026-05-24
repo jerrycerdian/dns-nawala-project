@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(180deg, #f4f7fb, #ffffff); color: #1f2937; }
+.container { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: #0f172a; color: #fff; padding: 32px; border-radius: 20px; box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2); }
+.hero h1 { margin: 0 0 12px; font-size: 42px; }
+.lead { max-width: 720px; font-size: 18px; line-height: 1.7; opacity: 0.95; }
+.dns-card { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.dns-card > div { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 18px; border-radius: 16px; }
+.label { display: block; margin-bottom: 8px; font-size: 13px; letter-spacing: .4px; text-transform: uppercase; opacity: 0.8; }
+code { font-size: 18px; font-weight: 700; }
+.button { display: inline-block; border: none; background: #2563eb; color: #fff; padding: 12px 18px; border-radius: 12px; text-decoration: none; cursor: pointer; font-weight: 700; }
+.button.secondary { background: #111827; }
+.section { margin-top: 28px; background: #fff; padding: 24px; border-radius: 18px; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); }
+.status { margin-top: 12px; font-weight: 700; }
+@media (max-width: 720px) { .hero h1 { font-size: 32px; } .dns-card { grid-template-columns: 1fr; } }

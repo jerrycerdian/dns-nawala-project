@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNS Nawala</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>DNS Nawala</h1>
+      <p class="lead">Penyaring konten negatif seperti pornografi, judi online, situs penipuan, phishing, dan malware.</p>
+
+      <div class="dns-card">
+        <div>
+          <span class="label">Primary DNS</span>
+          <code>180.131.144.144</code>
+        </div>
+        <div>
+          <span class="label">Secondary DNS</span>
+          <code>180.131.145.145</code>
+        </div>
+      </div>
+
+      <a class="button" href="#info">Lihat Informasi</a>
+    </section>
+
+    <section id="info" class="section">
+      <h2>Apa itu DNS Nawala?</h2>
+      <p>
+        DNS Nawala adalah layanan penyaringan internet yang digunakan di ISP, sekolah, kantor, dan institusi lain untuk membantu memblokir akses ke konten berbahaya.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Cara Pakai</h2>
+      <ol>
+        <li>Masukkan DNS pada perangkat, router, atau jaringan.</li>
+        <li>Simpan pengaturan.</li>
+        <li>Gunakan internet seperti biasa, situs berbahaya akan diblokir.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Status Backend</h2>
+      <button id="loadStatus" class="button secondary">Cek Status</button>
+      <p id="statusText" class="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
